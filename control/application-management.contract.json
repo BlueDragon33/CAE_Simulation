@@ -1,0 +1,28 @@
+{
+  "application": {
+    "id": "cae-simulation",
+    "name": "CAE Simulation",
+    "repository": "BlueDragon33/CAE_Simulation",
+    "tier": "client",
+    "mode": "managed-client-foundation",
+    "status": "foundation"
+  },
+  "deviceNamespace": "CAE-",
+  "remoteAdminReady": false,
+  "allow": [
+    "runtime-status",
+    "device-access-metadata",
+    "ui-policy",
+    "feature-flags",
+    "safe-audit-metadata"
+  ],
+  "deny": [
+    "cae-study-files",
+    "mesh-data",
+    "solver-input-decks",
+    "solver-result-fields",
+    "private-engineering-notes",
+    "raw-ai-prompts"
+  ],
+  "note": "Operational management only. Simulation project/result truth remains owned by CAE_Simulation."
+}
